@@ -36,7 +36,7 @@ jobs:
       - name: Install Dependencies
         run: sudo apt-get install -y nodejs jsonlint
       - name: Download Rules Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: rules-artifact
           path: public
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@master
       - name: Download Rules Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: rules-artifact
           path: public
